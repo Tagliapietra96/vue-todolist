@@ -20,16 +20,29 @@
 <body>
     <div id="my-app" class="py-5 d-flex justify-content-center align-items-center">
 
-        <div class="card bg-dark w-50 my-5">
+        <div class="card bg-dark shadow w-50 my-5">
 
-            <header>
-        
+            <header class="p-5">
+                <form class="input-group">
+                    <input type="text" class="form-control" placeholder="Aggiungi una nuova Task">
+                    <button class="btn btn-primary fs-3">+</button>
+                </form>
             </header>
-        
+
             <!-- /* ************************************************************************ */ -->
-        
-            <main>
-        
+
+            <main class="p-3">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="card p-3 flex-row align-items-center">
+                            <label class="flex-fill d-flex align-items-center">
+                             <input type="checkbox" class="form-check-input">  
+                             <span class="text-primary ms-3 fs-3">ciao</span> 
+                            </label>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
             </main>
 
         </div>
