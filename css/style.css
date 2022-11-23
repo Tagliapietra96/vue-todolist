@@ -1,0 +1,8 @@
+.btn-danger {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.col:hover .btn-danger{
+    opacity: 1;
+}
