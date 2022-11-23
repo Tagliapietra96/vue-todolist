@@ -37,8 +37,8 @@
                         <div class="card p-3 flex-row align-items-center">
                             <label class="flex-fill d-flex align-items-center">
                                 <input type="checkbox" class="form-check-input" v-model="element.isDone">
-                                <span class="text-primary ms-3 fs-4"
-                                    :class="(element.isDone) ? 'text-secondary text-decoration-line-through' : '' ">{{element.title}}</span>
+                                <span class=" ms-3 fs-4"
+                                    :class="(element.isDone) ? 'text-secondary text-decoration-line-through' : 'text-primary' ">{{element.title}}</span>
                             </label>
                             <button class="btn btn-danger" @click="onDeleteBtn(i)">Elimina</button>
                         </div>
