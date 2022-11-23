@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             //STRINGHE
-
+            newTask: '',
             //NUMERI
 
             //BOOLEANI
@@ -40,6 +40,20 @@ createApp({
     methods: {
         onDeleteBtn(i) {
             this.allTasks.splice(i, 1);
+        },
+        onSubmit(){
+            if(this.newTask === ''){
+                alert('Inserisci una nuova Task')
+                return
+            }else{
+                this.allTasks.push(
+                    {
+                        title: this.newTask,
+                        isDone: false
+                    }
+                );
+            }
+            this.newTask = '';
         }
     },
     mounted() {

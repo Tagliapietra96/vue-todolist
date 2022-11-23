@@ -23,8 +23,8 @@
         <div class="card bg-dark shadow w-50 my-5">
 
             <header class="p-5">
-                <form class="input-group">
-                    <input type="text" class="form-control" placeholder="Aggiungi una nuova Task">
+                <form class="input-group" @submit.prevent="onSubmit">
+                    <input type="text" class="form-control" placeholder="Aggiungi una nuova Task" v-model="newTask">
                     <button class="btn btn-primary fs-3">+</button>
                 </form>
             </header>
